@@ -1,5 +1,22 @@
 .container {
     font-family: 'Raleway', sans-serif;
+    margin-inline-start: 2rem;
+    margin-inline-end: 2rem;
+}
+@media (max-width:772px) {
+    .container{
+        text-align: center;
+        margin: auto;
+        width: 80%;
+    }
+    
+}
+.container .section{
+    margin-block-start: 65px;
+}
+.container .description{
+    margin-block-start: 25px;
+    margin-block-end: 25px;
 }
 .container .nav-bar {
     display: flex;
@@ -9,12 +26,64 @@
    
 }
 .container .nav-bar .nav-bar-image img{
-    margin-inline-start: 1rem;
     width: 7.5rem;
+}
+@media (max-width:772px) {
+    .container .nav-bar .nav-bar-image img{
+        width: 5.5rem;
+    }
 }
 .container .nav-bar .nav-bar-heading{
     display: flex;
     width:270px; 
     justify-content: space-evenly;
     color:#0c0c0c;
+}
+.container .files{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width:772px){
+    .container .files {
+        flex-direction: column-reverse;
+    }
+    .container .files .file-info h1{
+        font-size: 25px;
+    }
+}
+.container .files .file-info input[type = email]{
+    width: 270px;
+    height: 30px;
+    margin-inline-end: 10px;
+}
+.container .files .file-info input[type = button]{
+    width: 170px;
+    height: 36px;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.container .files .file-info input[type = button]:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+@media (max-width:772px){
+    .container .files .file-info input[type = button]{
+        width: 280px;
+        margin-block-start: 10px;
+        margin-inline-start: -7px;
+    }
+}
+.container .files .file-info{
+    max-width: 31.25rem;
+}
+.container .files .file-image img{
+    width: 450px;
+}
+@media (max-width:772px){
+    .container .files .file-image img{
+        width: 350px;
+    }
 }
