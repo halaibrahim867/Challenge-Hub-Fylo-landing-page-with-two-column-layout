@@ -98,11 +98,39 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    width: 100%;
+    padding: 2rem;
 }
 .container .productive .fylo-work {
     color: hsl(170, 45%, 43%);
 }
 .container .productive .fylo-work:hover{
     color:hsl(172, 71%, 56%);
+}
+.container .productive .info-person-card{
+    background-color:white;
+    width: 250px;
+    padding: 10px 30px;
+    margin-block-start: 2rem;
+    box-shadow: 30px 20px 20px 3px rgba(235, 233, 233, 0.6);
+}
+.container .productive .info-person-card .quote-icon{
+    width: 25px;
+}
+.container .productive .info-person-card .info-founder{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.container .productive .info-person-card .info-founder .info-name{
+    font-weight: bold;
+    margin-block-end: -10px;
+}
+.container .productive .info-person-card .info-founder .info-dec{
+    font-size: 13px;
+}
+.container .productive .info-person-card .info-founder img{
+    width: 45px;
+    height:45px;
+    border-radius: 50%;
 }
