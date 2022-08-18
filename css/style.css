@@ -1,3 +1,7 @@
+
+:root{
+    --mian-headingColor:hsl(243, 87%, 12%);
+}
 .container {
     font-family: 'Raleway', sans-serif;
     margin-inline-start: 2rem;
@@ -12,10 +16,7 @@
     
 }
 
-.container .heading{
-    color:hsl(243, 87%, 12%);
-    font-family: 'Raleway', sans-serif;
-}
+
 .container .section{
     margin-block-start: 65px;
 }
@@ -49,6 +50,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.container .heading{
+    color:var(--mian-headingColor);
+    font-family: 'Raleway', sans-serif;
 }
 @media (max-width:772px){
     .container .section{
@@ -100,6 +105,14 @@
     background-position: top;
     padding: 2rem;
 }
+@media (max-width:772px) {
+    .container .heading2{
+        color:var(--mian-headingColor);
+        font-size: 19px;
+        font-weight: bold;
+    }
+}
+
 .container .productive .fylo-work {
     color: hsl(170, 45%, 43%);
 }
@@ -113,14 +126,19 @@
     margin-block-start: 2rem;
     box-shadow: 30px 20px 20px 3px rgba(235, 233, 233, 0.6);
 }
+@media (max-width:772px) {
+    .container .productive .info .description,
+    .container .productive .info-person-card{
+        text-align: justify;
+    }
+
+}
 .container .productive .info-person-card .quote-icon{
     width: 25px;
 }
 .container .productive .info-person-card .info-founder{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    
 }
 .container .productive .info-person-card .info-founder .info-name{
     font-weight: bold;
@@ -133,4 +151,5 @@
     width: 45px;
     height:45px;
     border-radius: 50%;
+    margin-inline-end: 7px;
 }
