@@ -4,8 +4,6 @@
 }
 .container {
     font-family: 'Raleway', sans-serif;
-    margin-inline-start: 2rem;
-    margin-inline-end: 2rem;
 }
 @media (max-width:772px) {
     .container{
@@ -15,11 +13,10 @@
     }
     
 }
-
-
 .container .section{
-    margin-block-start: 65px;
-}
+    /* margin-block-start: 65px; */
+    padding: 2rem;
+} 
 .container .description{
     margin-block-start: 25px;
     margin-block-end: 25px;
@@ -30,7 +27,8 @@
     justify-content: space-between;
     margin-block-start: 1.5rem;
     align-items: center;
-   
+    padding-inline-start:2rem;
+    padding-inline-end: 2rem;
 }
 .container .nav-bar .nav-bar-image img{
     width: 7.5rem;
@@ -68,7 +66,14 @@
     height: 30px;
     margin-inline-end: 10px;
 }
-.container .files .info input[type = button]{
+.container .files .info .invalid-email{
+    display: none;
+}
+.container .files .info input[type =email]:invalid{
+    display: block;
+    color: red;
+}
+.container  input[type = submit]{
     width: 170px;
     height: 36px;
     background-color: hsl(224, 93%, 58%);
@@ -76,12 +81,12 @@
     border: none;
     border-radius: 3px;
 }
-.container .files .info input[type = button]:hover{
+.container  input[type = submit]:hover{
     cursor: pointer;
     opacity: .7;
 }
 @media (max-width:772px){
-    .container .files .info input[type = button]{
+    .container .files .info input[type = submit]{
         width: 280px;
         margin-block-start: 10px;
         margin-inline-start: -7px;
@@ -104,6 +109,9 @@
     background-repeat: no-repeat;
     background-position: top;
     padding: 2rem;
+}
+.container .heading2{
+    font-size: 25px;
 }
 @media (max-width:772px) {
     .container .heading2{
@@ -152,4 +160,22 @@
     height:45px;
     border-radius: 50%;
     margin-inline-end: 7px;
+}
+.container .access{
+    padding: 20px;
+    background-color: hsl( 237.6, 36.5%, 43.92%);
+    color:hsl(220, 2.41%, 96.47%);
+}
+.container .access .heading3{
+    font-size: 20px;
+}
+.container .access .login  input{
+    display: block;
+}
+.container .access .login input[type= email]{
+    width: 370px;
+    height: 35px;
+}
+.container .access .login input[type= submit]{
+    margin-block-start: 15px;
 }
