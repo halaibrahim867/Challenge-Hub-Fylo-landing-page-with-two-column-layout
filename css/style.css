@@ -11,12 +11,18 @@
     }
     
 }
+
+.container .heading{
+    color:hsl(243, 87%, 12%);
+    font-family: 'Raleway', sans-serif;
+}
 .container .section{
     margin-block-start: 65px;
 }
 .container .description{
     margin-block-start: 25px;
     margin-block-end: 25px;
+    max-width: 30rem;
 }
 .container .nav-bar {
     display: flex;
@@ -39,25 +45,25 @@
     justify-content: space-evenly;
     color:#0c0c0c;
 }
-.container .files{
+.container .section{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 @media (max-width:772px){
-    .container .files {
+    .container .section{
         flex-direction: column-reverse;
     }
-    .container .files .file-info h1{
+    .container .heading{
         font-size: 25px;
     }
 }
-.container .files .file-info input[type = email]{
+.container .files .info input[type = email]{
     width: 270px;
     height: 30px;
     margin-inline-end: 10px;
 }
-.container .files .file-info input[type = button]{
+.container .files .info input[type = button]{
     width: 170px;
     height: 36px;
     background-color: hsl(224, 93%, 58%);
@@ -65,25 +71,38 @@
     border: none;
     border-radius: 3px;
 }
-.container .files .file-info input[type = button]:hover{
+.container .files .info input[type = button]:hover{
     cursor: pointer;
     opacity: .7;
 }
 @media (max-width:772px){
-    .container .files .file-info input[type = button]{
+    .container .files .info input[type = button]{
         width: 280px;
         margin-block-start: 10px;
         margin-inline-start: -7px;
     }
 }
-.container .files .file-info{
+.container .files .info{
     max-width: 31.25rem;
 }
-.container .files .file-image img{
+.container .image{
     width: 450px;
 }
 @media (max-width:772px){
-    .container .files .file-image img{
+    .container .image{
         width: 350px;
     }
+}
+.container .productive{
+    background-image: url(../images/bg-curve-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+}
+.container .productive .fylo-work {
+    color: hsl(170, 45%, 43%);
+}
+.container .productive .fylo-work:hover{
+    color:hsl(172, 71%, 56%);
 }
