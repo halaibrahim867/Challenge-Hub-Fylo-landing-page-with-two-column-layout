@@ -58,7 +58,7 @@
         flex-direction: column-reverse;
     }
     .container .heading{
-        font-size: 25px;
+        font-size: 23px;
     }
 }
 .container .files .info input[type = email]{
@@ -166,6 +166,16 @@
     background-color: hsl( 237.6, 36.5%, 43.92%);
     color:hsl(220, 2.41%, 96.47%);
 }
+@media (max-width:772px){
+    .container .access{
+        flex-direction: column;
+        text-align: center;
+    }
+    .container .access .description{
+        max-width: 350px;
+        line-height: 1.5rem;
+    }
+}
 .container .access .heading3{
     font-size: 20px;
 }
@@ -178,4 +188,11 @@
 }
 .container .access .login input[type= submit]{
     margin-block-start: 15px;
+}
+@media (max-width:772px){
+    .container .access .login input[type= email],
+    .container .access .login input[type= submit]{
+        width: 230px;
+    }
+    
 }
